@@ -2,7 +2,7 @@
 ## Endpoints
 ### -/catalogo
 ### -/catalogo_filter_by_category?category={string}
-
+### las imagenes estan hosteadas en la nube de firebase, en un store se puede apreciar en las respuestas de la api
 # Adjunto una collection de postman con los endpoints a consumir
 -[Coleccion postman](https://github.com/valencia12/api-for-apps/blob/main/springboot%202/postman%20requests%20postman_collection.json)
 ## Prerequisites
