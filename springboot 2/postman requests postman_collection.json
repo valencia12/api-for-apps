@@ -1,0 +1,1390 @@
+{
+	"info": {
+		"_postman_id": "61bf70f0-0f53-41d5-8275-6088cd3ac817",
+		"name": "syllabus-builder lastversion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "subjects",
+			"item": [
+				{
+					"name": "getFindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/subjects/all",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getFindAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/subjects/all",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1138"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"472-pPIbpGJp1uoI7tISMfijIXRLWZI\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:19:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"634f7efef1b03f1d5d79c6e1\",\n        \"term\": {\n            \"display\": \"II\",\n            \"index\": 2\n        },\n        \"code\": \"12120\",\n        \"uv\": 19,\n        \"name\": \"Mate discreta\",\n        \"description\": \"Test description\",\n        \"weight\": 1,\n        \"prerequisite\": [\n            {\n                \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n                \"term\": {\n                    \"display\": \"I\",\n                    \"index\": 1\n                },\n                \"code\": \"10180\",\n                \"uv\": 4,\n                \"name\": \"Precálculo 1\",\n                \"description\": \"Test description 1\",\n                \"weight\": 1,\n                \"prerequisite\": [\n                    \"634f7f10f1b03f1d5d79c6e4\"\n                ],\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n                \"term\": {\n                    \"display\": \"II\",\n                    \"index\": 2\n                },\n                \"code\": \"10182\",\n                \"uv\": 5,\n                \"name\": \"Precálculo 2\",\n                \"description\": \"Test description 2\",\n                \"weight\": 1,\n                \"prerequisite\": [],\n                \"__v\": 0\n            }\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n        \"term\": {\n            \"display\": \"I\",\n            \"index\": 1\n        },\n        \"code\": \"10180\",\n        \"uv\": 4,\n        \"name\": \"Precálculo 1\",\n        \"description\": \"Test description 1\",\n        \"weight\": 1,\n        \"prerequisite\": [\n            {\n                \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n                \"term\": {\n                    \"display\": \"II\",\n                    \"index\": 2\n                },\n                \"code\": \"10182\",\n                \"uv\": 5,\n                \"name\": \"Precálculo 2\",\n                \"description\": \"Test description 2\",\n                \"weight\": 1,\n                \"prerequisite\": [],\n                \"__v\": 0\n            }\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n        \"term\": {\n            \"display\": \"II\",\n            \"index\": 2\n        },\n        \"code\": \"10182\",\n        \"uv\": 5,\n        \"name\": \"Precálculo 2\",\n        \"description\": \"Test description 2\",\n        \"weight\": 1,\n        \"prerequisite\": [],\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getFindOneSubject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/subjects/:code",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "12120"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getFindOneSubject",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/subjects/:code",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "12120"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "580"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"244-uIj32ED95ULgS3h3l6IswF6KZTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:19:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"634f7efef1b03f1d5d79c6e1\",\n    \"term\": {\n        \"display\": \"II\",\n        \"index\": 2\n    },\n    \"code\": \"12120\",\n    \"uv\": 19,\n    \"name\": \"Mate discreta\",\n    \"description\": \"Test description\",\n    \"weight\": 1,\n    \"prerequisite\": [\n        {\n            \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n            \"term\": {\n                \"display\": \"I\",\n                \"index\": 1\n            },\n            \"code\": \"10180\",\n            \"uv\": 4,\n            \"name\": \"Precálculo 1\",\n            \"description\": \"Test description 1\",\n            \"weight\": 1,\n            \"prerequisite\": [\n                \"634f7f10f1b03f1d5d79c6e4\"\n            ],\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n            \"term\": {\n                \"display\": \"II\",\n                \"index\": 2\n            },\n            \"code\": \"10182\",\n            \"uv\": 5,\n            \"name\": \"Precálculo 2\",\n            \"description\": \"Test description 2\",\n            \"weight\": 1,\n            \"prerequisite\": [],\n            \"__v\": 0\n        }\n    ],\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "postCreateSubject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"order\": 1,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"10121\",\r\n        \"uv\": 4,\r\n        \"name\": \"Magister*\",\r\n        \"description\": \"Test description\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/subjects",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "postCreateSubject",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"order\": 1,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"10120\",\r\n        \"uv\": 4,\r\n        \"name\": \"Magister*\",\r\n        \"description\": \"Test description\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/subjects",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-PDd0oJz60Ykr7Kn8hqb4TOhCSgU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 04:37:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"term\": {\n        \"display\": \"I\",\n        \"index\": 1\n    },\n    \"code\": \"10120\",\n    \"uv\": 4,\n    \"name\": \"Magister*\",\n    \"description\": \"Test description\",\n    \"weight\": 1,\n    \"prerequisite\": [],\n    \"_id\": \"634f7efef1b03f1d5d79c6e1\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "postCreateSubjectMultiple",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"order\": 1,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"10180\",\r\n        \"uv\": 4,\r\n        \"name\": \"Precálculo\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 2,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"opt1-001\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa técnica I\",\r\n        \"description\": \"Profundiza los conocimientos adquiridos en un área específica de la carrera: seguridad, inteligencia de negocios, programación, entre otras.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 3,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"10142\",\r\n        \"uv\": 4,\r\n        \"name\": \"Matemática discreta I\",\r\n        \"description\": \"Conoce los fundamentos de lógica en los que se basan los lenguajes de programación para poder construir soluciones computacionales.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 4,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"190153\",\r\n        \"uv\": 4,\r\n        \"name\": \"Fundamentos de programación\",\r\n        \"description\": \"Conoce los fundamentos de lógica en los que se basan los lenguajes de programación para poder construir soluciones computacionales.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 5,\r\n        \"term\": {\r\n            \"display\": \"II\",\r\n            \"index\": 2\r\n        },\r\n        \"code\": \"10112\",\r\n        \"uv\": 4,\r\n        \"name\": \"Álgebra vectorial y matrices\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 6,\r\n        \"term\": {\r\n            \"display\": \"II\",\r\n            \"index\": 2\r\n        },\r\n        \"code\": \"10181\",\r\n        \"uv\": 4,\r\n        \"name\": \"Cálculo I\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 7,\r\n        \"term\": {\r\n            \"display\": \"II\",\r\n            \"index\": 2\r\n        },\r\n        \"code\": \"190154\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación de estructuras dinámicas\",\r\n        \"description\": \"Conoce las estructuras de datos y su suma importancia en la programación, y aprende a construirlas con un lenguaje de programación.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 8,\r\n        \"term\": {\r\n            \"display\": \"II\",\r\n            \"index\": 2\r\n        },\r\n        \"code\": \"10143\",\r\n        \"uv\": 4,\r\n        \"name\": \"Matemática discreta II\",\r\n        \"description\": \"Profundiza en las herramientas teóricas y de abstracción que permiten la representación de ideas como instrucciones ejecutables en una PC.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 9,\r\n        \"term\": {\r\n            \"display\": \"III\",\r\n            \"index\": 3\r\n        },\r\n        \"code\": \"200068\",\r\n        \"uv\": 4,\r\n        \"name\": \"Física I\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 10,\r\n        \"term\": {\r\n            \"display\": \"III\",\r\n            \"index\": 3\r\n        },\r\n        \"code\": \"10182\",\r\n        \"uv\": 4,\r\n        \"name\": \"Cálculo II\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 11,\r\n        \"term\": {\r\n            \"display\": \"III\",\r\n            \"index\": 3\r\n        },\r\n        \"code\": \"190175\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación orientada a objetos\",\r\n        \"description\": \"Aprende el paradigma orientado a objetos mediante un lenguaje de programación, la manera de programar más  solicitada en la industria.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 12,\r\n        \"term\": {\r\n            \"display\": \"III\",\r\n            \"index\": 3\r\n        },\r\n        \"code\": \"190155\",\r\n        \"uv\": 4,\r\n        \"name\": \"Bases de datos\",\r\n        \"description\": \"Conoce los fundamentos detrás del diseño e implementación de bases de datos y su utilidad y aplicación a contextos de la vida cotidiana.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 13,\r\n        \"term\": {\r\n            \"display\": \"IV\",\r\n            \"index\": 4\r\n        },\r\n        \"code\": \"200084\",\r\n        \"uv\": 4,\r\n        \"name\": \"Electricidad y magnetismo\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 14,\r\n        \"term\": {\r\n            \"display\": \"IV\",\r\n            \"index\": 4\r\n        },\r\n        \"code\": \"10183\",\r\n        \"uv\": 4,\r\n        \"name\": \"Cálculo III\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 15,\r\n        \"term\": {\r\n            \"display\": \"IV\",\r\n            \"index\": 4\r\n        },\r\n        \"code\": \"190156\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación web\",\r\n        \"description\": \"Adquiere los conocimientos y herramientas necesarias para el diseño e implementación de páginas web interactivas y funcional\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 16,\r\n        \"term\": {\r\n            \"display\": \"IV\",\r\n            \"index\": 4\r\n        },\r\n        \"code\": \"190157\",\r\n        \"uv\": 4,\r\n        \"name\": \"Administración de bases de datos\",\r\n        \"description\": \"Conoce los fundamentos para añadir a una base de datos los elementos de administración y de seguridad necesarios para su funcionamiento.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 17,\r\n        \"term\": {\r\n            \"display\": \"IV\",\r\n            \"index\": 4\r\n        },\r\n        \"code\": \"oph1-001\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa humanístico-social I\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 18,\r\n        \"term\": {\r\n            \"display\": \"V\",\r\n            \"index\": 5\r\n        },\r\n        \"code\": \"10141\",\r\n        \"uv\": 4,\r\n        \"name\": \"Análisis numérico\",\r\n        \"description\": \"Conoce los principales métodos numéricos implementables en un lenguaje de programación y aplicables a múltiples escenarios de ingeniería.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 19,\r\n        \"term\": {\r\n            \"display\": \"V\",\r\n            \"index\": 5\r\n        },\r\n        \"code\": \"190158\",\r\n        \"uv\": 4,\r\n        \"name\": \"Redes de computadoras\",\r\n        \"description\": \"Aprende los fundamentos detrás del funcionamiento de las redes de computadoras y los principios básicos para una correcta configuración.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 20,\r\n        \"term\": {\r\n            \"display\": \"V\",\r\n            \"index\": 5\r\n        },\r\n        \"code\": \"190159\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación de dispositivos móviles\",\r\n        \"description\": \"Adquiere los conocimientos y herramientas necesarias para el diseño e implementación de aplicaciones para Android altamente interactivas.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 21,\r\n        \"term\": {\r\n            \"display\": \"V\",\r\n            \"index\": 5\r\n        },\r\n        \"code\": \"190160\",\r\n        \"uv\": 4,\r\n        \"name\": \"Análisis de sistemas\",\r\n        \"description\": \"Conoce las principales metologías para el análisis de un problema y el uso de esta información para el diseño de una solución computacional.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 22,\r\n        \"term\": {\r\n            \"display\": \"V\",\r\n            \"index\": 5\r\n        },\r\n        \"code\": \"200069\",\r\n        \"uv\": 4,\r\n        \"name\": \"Física  II\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 23,\r\n        \"term\": {\r\n            \"display\": \"VI\",\r\n            \"index\": 6\r\n        },\r\n        \"code\": \"oph1-002\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa humanístico-social  II\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 24,\r\n        \"term\": {\r\n            \"display\": \"VI\",\r\n            \"index\": 6\r\n        },\r\n        \"code\": \"190161\",\r\n        \"uv\": 4,\r\n        \"name\": \"Análisis de algoritmos\",\r\n        \"description\": \"Aprende las herramientas para medir la eficiencia de un algoritmo y poder seleccionar la opción más eficiente para un problema específico.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 25,\r\n        \"term\": {\r\n            \"display\": \"VI\",\r\n            \"index\": 6\r\n        },\r\n        \"code\": \"190162\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación de artefactos\",\r\n        \"description\": \"Adquiere las habilidades para programar a bajo nivel usando dispositivos y microcontroladores para la creación de aplicaciones en físico.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 26,\r\n        \"term\": {\r\n            \"display\": \"VI\",\r\n            \"index\": 6\r\n        },\r\n        \"code\": \"10118\",\r\n        \"uv\": 4,\r\n        \"name\": \"Probabilidad y estadística\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 27,\r\n        \"term\": {\r\n            \"display\": \"VI\",\r\n            \"index\": 6\r\n        },\r\n        \"code\": \"190163\",\r\n        \"uv\": 4,\r\n        \"name\": \"Seguridad en entornos de desarrollo\",\r\n        \"description\": \"Conoce los conceptos y herramientas principales que permiten la detección de vulnerabilidades y su respectiva prevención y contención.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 28,\r\n        \"term\": {\r\n            \"display\": \"VII\",\r\n            \"index\": 7\r\n        },\r\n        \"code\": \"190065\",\r\n        \"uv\": 4,\r\n        \"name\": \"Arquitectura de computadoras\",\r\n        \"description\": \"Conoce los componentes lógicos que conforman el hardware de una computadora, y aprende su manipulación directa mediante programación.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 29,\r\n        \"term\": {\r\n            \"display\": \"VII\",\r\n            \"index\": 7\r\n        },\r\n        \"code\": \"190164\",\r\n        \"uv\": 4,\r\n        \"name\": \"Técnicas de simulación en computadoras \",\r\n        \"description\": \"Conoce la metología y herramientas utilizadas en la representación de fenómenos físicos en la computadora para el análisis de casos reales.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 30,\r\n        \"term\": {\r\n            \"display\": \"VII\",\r\n            \"index\": 7\r\n        },\r\n        \"code\": \"190165\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación n-capas\",\r\n        \"description\": \"Aprende los principios de diseño para la arquitectura de software en proyectos de desarrollo que involucren múltiples capas.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 31,\r\n        \"term\": {\r\n            \"display\": \"VII\",\r\n            \"index\": 7\r\n        },\r\n        \"code\": \"190176\",\r\n        \"uv\": 4,\r\n        \"name\": \"Fundamentos de inteligencia de negocios\",\r\n        \"description\": \"Adquiere las metologías principales del área de inteligencia de negocios, el enfoque analítico de bases de datos para toma de decisiones.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 32,\r\n        \"term\": {\r\n            \"display\": \"VII\",\r\n            \"index\": 7\r\n        },\r\n        \"code\": \"oph1-003\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa humanístico-social III\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 33,\r\n        \"term\": {\r\n            \"display\": \"VIII\",\r\n            \"index\": 8\r\n        },\r\n        \"code\": \"190166\",\r\n        \"uv\": 4,\r\n        \"name\": \"Sistemas operativos\",\r\n        \"description\": \"Conoce el funcionamiento de los principales componentes de un sistema operativo y los algoritmos involucrados en su funcionamiento.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 34,\r\n        \"term\": {\r\n            \"display\": \"VIII\",\r\n            \"index\": 8\r\n        },\r\n        \"code\": \"190167\",\r\n        \"uv\": 4,\r\n        \"name\": \"Programación declarativa\",\r\n        \"description\": \"Aprende a programar bajo los paradigmas de programación lógica y programación funcional, y conoce sus características y aplicaciones.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 35,\r\n        \"term\": {\r\n            \"display\": \"VIII\",\r\n            \"index\": 8\r\n        },\r\n        \"code\": \"190168\",\r\n        \"uv\": 4,\r\n        \"name\": \"Ingeniería de software\",\r\n        \"description\": \"Profundiza en el diseño y aplicación de las metodologías ágiles para la eficiencia en la administración proyectos de desarrollo de software.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 36,\r\n        \"term\": {\r\n            \"display\": \"VIII\",\r\n            \"index\": 8\r\n        },\r\n        \"code\": \"250055\",\r\n        \"uv\": 4,\r\n        \"name\": \"Formulación y evaluación de proyectos\",\r\n        \"description\": \"Conoce las metologías para la formulación de un proyecto de desarrollo de software y para la evaluación de su factibilidad y rentabilidad.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 37,\r\n        \"term\": {\r\n            \"display\": \"IX\",\r\n            \"index\": 9\r\n        },\r\n        \"code\": \"oph1-004\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa humanístico-social IV\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 38,\r\n        \"term\": {\r\n            \"display\": \"IX\",\r\n            \"index\": 9\r\n        },\r\n        \"code\": \"opt1-002\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa técnica II\",\r\n        \"description\": \"Profundiza los conocimientos adquiridos en un área específica de la carrera: seguridad, inteligencia de negocios, programación, entre otras.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 39,\r\n        \"term\": {\r\n            \"display\": \"IX\",\r\n            \"index\": 9\r\n        },\r\n        \"code\": \"190169\",\r\n        \"uv\": 4,\r\n        \"name\": \"Aplicaciones código abierto \",\r\n        \"description\": \"Conoce las características, metologías, y particularidades legales, técnicas y económicas del desarrollo de código abierto y código libre.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 40,\r\n        \"term\": {\r\n            \"display\": \"IX\",\r\n            \"index\": 9\r\n        },\r\n        \"code\": \"190170\",\r\n        \"uv\": 4,\r\n        \"name\": \"Práctica profesional I\",\r\n        \"description\": \"Administra un proyecto de desarrollo para un caso concreto con un cliente real, poniendo en práctica todo lo aprendido en la carrera.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 41,\r\n        \"term\": {\r\n            \"display\": \"X\",\r\n            \"index\": 10\r\n        },\r\n        \"code\": \"opt1-003\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa técnica III\",\r\n        \"description\": \"Profundiza los conocimientos adquiridos en un área específica de la carrera: seguridad, inteligencia de negocios, programación, entre otras.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 42,\r\n        \"term\": {\r\n            \"display\": \"X\",\r\n            \"index\": 10\r\n        },\r\n        \"code\": \"190171\",\r\n        \"uv\": 4,\r\n        \"name\": \"Teoría de lenguajes de programación\",\r\n        \"description\": \"Conoce las bases matemáticas para el diseño de lenguajes de programación y para la construcción de sus compiladores e intérpretes.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 43,\r\n        \"term\": {\r\n            \"display\": \"X\",\r\n            \"index\": 10\r\n        },\r\n        \"code\": \"oph1-005\",\r\n        \"uv\": 4,\r\n        \"name\": \"Optativa humanístico-social V\",\r\n        \"description\": \"\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 44,\r\n        \"term\": {\r\n            \"display\": \"X\",\r\n            \"index\": 10\r\n        },\r\n        \"code\": \"190172\",\r\n        \"uv\": 4,\r\n        \"name\": \"Práctica profesional II\",\r\n        \"description\": \"Profundiza en la administración de proyectos de desarrollo de software para casos concretos con clientes reales.\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    }\r\n\r\n\r\n\r\n\r\n    \r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/subjects/multiple",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects",
+								"multiple"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "postCreateSubjectMultiple",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"order\": 1,\r\n        \"term\": {\r\n            \"display\": \"I\",\r\n            \"index\": 1\r\n        },\r\n        \"code\": \"10180\",\r\n        \"uv\": 4,\r\n        \"name\": \"Precálculo 1\",\r\n        \"description\": \"Test description 1\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    },\r\n    {\r\n        \"order\": 2,\r\n        \"term\": {\r\n            \"display\": \"II\",\r\n            \"index\": 2\r\n        },\r\n        \"code\": \"10182\",\r\n        \"uv\": 5,\r\n        \"name\": \"Precálculo 2\",\r\n        \"description\": \"Test description 2\", \r\n        \"weight\": 1,\r\n        \"prerequisite\": []\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/subjects/multiple",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects",
+										"multiple"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "372"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"174-skS2X89FBuv7fzY4yQH/JX5/zRU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 04:37:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"term\": {\n            \"display\": \"I\",\n            \"index\": 1\n        },\n        \"code\": \"10180\",\n        \"uv\": 4,\n        \"name\": \"Precálculo 1\",\n        \"description\": \"Test description 1\",\n        \"weight\": 1,\n        \"prerequisite\": [],\n        \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n        \"__v\": 0\n    },\n    {\n        \"term\": {\n            \"display\": \"II\",\n            \"index\": 2\n        },\n        \"code\": \"10182\",\n        \"uv\": 5,\n        \"name\": \"Precálculo 2\",\n        \"description\": \"Test description 2\",\n        \"weight\": 1,\n        \"prerequisite\": [],\n        \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "putUpdateSubject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"term\": {\r\n        \"display\": \"II\",\r\n        \"index\": 2\r\n    },\r\n    \"code\": \"12120\",\r\n    \"uv\": 19,\r\n    \"name\": \"Mate discreta\",\r\n    \"description\": \"Test description\",\r\n    \"weight\": 1,\r\n    \"prerequisite\": [\"10182\", \"10180\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/subjects/:code",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "11120"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "putUpdateSubject",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"term\": {\r\n        \"display\": \"II\",\r\n        \"index\": 2\r\n    },\r\n    \"code\": \"12120\",\r\n    \"uv\": 19,\r\n    \"name\": \"Mate discreta\",\r\n    \"description\": \"Test description\",\r\n    \"weight\": 1,\r\n    \"prerequisite\": [\"10182\", \"10180\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/subjects/:code",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "11120"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "580"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"244-uIj32ED95ULgS3h3l6IswF6KZTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:37:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"634f7efef1b03f1d5d79c6e1\",\n    \"term\": {\n        \"display\": \"II\",\n        \"index\": 2\n    },\n    \"code\": \"12120\",\n    \"uv\": 19,\n    \"name\": \"Mate discreta\",\n    \"description\": \"Test description\",\n    \"weight\": 1,\n    \"prerequisite\": [\n        {\n            \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n            \"term\": {\n                \"display\": \"I\",\n                \"index\": 1\n            },\n            \"code\": \"10180\",\n            \"uv\": 4,\n            \"name\": \"Precálculo 1\",\n            \"description\": \"Test description 1\",\n            \"weight\": 1,\n            \"prerequisite\": [\n                \"634f7f10f1b03f1d5d79c6e4\"\n            ],\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n            \"term\": {\n                \"display\": \"II\",\n                \"index\": 2\n            },\n            \"code\": \"10182\",\n            \"uv\": 5,\n            \"name\": \"Precálculo 2\",\n            \"description\": \"Test description 2\",\n            \"weight\": 1,\n            \"prerequisite\": [],\n            \"__v\": 0\n        }\n    ],\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "putSetPrerequisites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"code\": \"10112\",\r\n        \"prerequisite\": [\"10182\"]\r\n    },\r\n    {\r\n        \"code\": \"10181\",\r\n        \"prerequisite\": [\"10180\"]\r\n    },\r\n    {\r\n        \"code\": \"190154\",\r\n        \"prerequisite\": [\"10142\", \"190153\"]\r\n    },\r\n    {\r\n        \"code\": \"10143\",\r\n        \"prerequisite\": [\"10142\", \"190153\"]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/subjects/prerequisites",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects",
+								"prerequisites"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "putSetPrerequisites",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"code\": \"10180\",\r\n        \"prerequisite\": [\"10182\"]\r\n    },\r\n    {\r\n        \"code\": \"10182\",\r\n        \"prerequisite\": []\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/subjects/prerequisites",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects",
+										"prerequisites"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "557"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22d-3i5nk7XbOBE9J85XUsIKqUVfb2I\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:19:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n        \"term\": {\n            \"display\": \"I\",\n            \"index\": 1\n        },\n        \"code\": \"10180\",\n        \"uv\": 4,\n        \"name\": \"Precálculo 1\",\n        \"description\": \"Test description 1\",\n        \"weight\": 1,\n        \"prerequisite\": [\n            {\n                \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n                \"term\": {\n                    \"display\": \"II\",\n                    \"index\": 2\n                },\n                \"code\": \"10182\",\n                \"uv\": 5,\n                \"name\": \"Precálculo 2\",\n                \"description\": \"Test description 2\",\n                \"weight\": 1,\n                \"prerequisite\": [],\n                \"__v\": 0\n            }\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n        \"term\": {\n            \"display\": \"II\",\n            \"index\": 2\n        },\n        \"code\": \"10182\",\n        \"uv\": 5,\n        \"name\": \"Precálculo 2\",\n        \"description\": \"Test description 2\",\n        \"weight\": 1,\n        \"prerequisite\": [],\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "deleteRemoveSubject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/subjects/:code",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"subjects",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "10182"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteRemoveSubject",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/subjects/:code",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"subjects",
+										":code"
+									],
+									"variable": [
+										{
+											"key": "code",
+											"value": "10121"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:20:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "curriculum",
+			"item": [
+				{
+					"name": "getFindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/curriculums/all",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"curriculums",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getFindAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/curriculums/all",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"curriculums",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "775"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"307-gYH2K29qN4jpcoG09gXZ3/veZt0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 23:10:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"632f9e2c915b315dc5113e6f\",\n        \"name\": \"Técnico en Computación\",\n        \"subjects\": [\n            \"632f6ea5eb44671421816598\",\n            \"632f6f2f8573c742692c6382\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"632f9f5bd05b36bbd4d64877\",\n        \"name\": \"Técnico en Computación\",\n        \"subjects\": [\n            \"632f6ea5eb44671421816598\",\n            \"632f6f2f8573c742692c6382\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"632f9fa9a131ecd45964fe6f\",\n        \"name\": \"Técnico en Computación\",\n        \"subjects\": [\n            \"632f6ea5eb44671421816598\",\n            \"632f6f2f8573c742692c6382\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"632fa0553eac58377847c15e\",\n        \"name\": \"Técnico en Computación\",\n        \"subjects\": [\n            \"632f6ea5eb44671421816598\",\n            \"632f6f2f8573c742692c6382\",\n            \"632f8e25381a576e1f7077f6\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6330dfd209c4df851f43353c\",\n        \"name\": \"Técnico en Computación\",\n        \"subjects\": [\n            \"632f6ea5eb44671421816598\",\n            \"632f6f2f8573c742692c6382\",\n            \"632f8e25381a576e1f7077f6\"\n        ],\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getFindOneCurriculum",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/curriculums/:id",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"curriculums",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6350777ba1991d9e4fcaee91"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getFindOneCurriculum",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/curriculums/:id",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"curriculums",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "632fa0553eac58377847c15e"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "625"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"271-73RMjK7gP07nE+u9NUKv5479Xoc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 23:10:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"632fa0553eac58377847c15e\",\n    \"name\": \"Técnico en Computación\",\n    \"subjects\": [\n        {\n            \"_id\": \"632f6ea5eb44671421816598\",\n            \"term\": {\n                \"display\": \"I\",\n                \"index\": 1\n            },\n            \"code\": \"10180\",\n            \"uv\": 4,\n            \"name\": \"Precálculo*\",\n            \"weight\": 1,\n            \"prerequisite\": [],\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"632f6f2f8573c742692c6382\",\n            \"term\": {\n                \"display\": \"I\",\n                \"index\": 1\n            },\n            \"code\": \"10180\",\n            \"uv\": 4,\n            \"name\": \"Precálculo*\",\n            \"weight\": 1,\n            \"prerequisite\": [],\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"632f8e25381a576e1f7077f6\",\n            \"term\": {\n                \"display\": \"II\",\n                \"index\": 2\n            },\n            \"code\": \"10120\",\n            \"uv\": 19,\n            \"name\": \"Mate discreta\",\n            \"description\": \"Test description\",\n            \"weight\": 1,\n            \"prerequisite\": [\n                \"632f8e25381a576e1f7077f6\",\n                \"632f9e10915b315dc5113e6d\"\n            ],\n            \"__v\": 0\n        }\n    ],\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "postCreateCurriculum",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ingenieria en Informatica\",\r\n    \"subjects\": [\r\n        \"10180\",\"10142\",\"190153\",\"10112\",\"10181\",\"190154\",\"10143\",\"200068\",\"10182\",\"190175\",\"190155\",\"200084\",\"10183\",\"190156\",\"190157\",\"10141\",\"190158\",\"190159\",\"190160\",\"200069\",\"190161\",\"190162\",\"10118\",\"190163\",\"190065\",\"190164\",\"190165\",\"190176\",\"190166\",\"190167\",\"190168\",\"250055\",\"190169\",\"190170\",\"190171\",\"190172\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/curriculums",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"curriculums"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "postCreateCurriculum",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Técnico en Computación\",\r\n    \"subjects\": [\r\n        \"12120\", \"10180\", \"10182\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/curriculums",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"curriculums"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "724"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d4-CCFn/slpCiB5v7kYZBX6OGdiPm8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:39:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"subjects\": [\n        {\n            \"_id\": \"634f7efef1b03f1d5d79c6e1\",\n            \"term\": {\n                \"display\": \"II\",\n                \"index\": 2\n            },\n            \"code\": \"12120\",\n            \"uv\": 19,\n            \"name\": \"Mate discreta\",\n            \"description\": \"Test description\",\n            \"weight\": 1,\n            \"prerequisite\": [\n                \"634f7f10f1b03f1d5d79c6e3\",\n                \"634f7f10f1b03f1d5d79c6e4\"\n            ],\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"634f7f10f1b03f1d5d79c6e3\",\n            \"term\": {\n                \"display\": \"I\",\n                \"index\": 1\n            },\n            \"code\": \"10180\",\n            \"uv\": 4,\n            \"name\": \"Precálculo 1\",\n            \"description\": \"Test description 1\",\n            \"weight\": 1,\n            \"prerequisite\": [\n                \"634f7f10f1b03f1d5d79c6e4\"\n            ],\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"634f7f10f1b03f1d5d79c6e4\",\n            \"term\": {\n                \"display\": \"II\",\n                \"index\": 2\n            },\n            \"code\": \"10182\",\n            \"uv\": 5,\n            \"name\": \"Precálculo 2\",\n            \"description\": \"Test description 2\",\n            \"weight\": 1,\n            \"prerequisite\": [],\n            \"__v\": 0\n        }\n    ],\n    \"_id\": \"634f8d7c345eaaacfbd523cb\",\n    \"name\": \"Técnico en Computación\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "putUpdateCurriculum",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Técnico en Computación\",\r\n    \"subjects\": [\r\n        \"12120\", \"10180\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/curriculums/:id",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"curriculums",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "634f8d7c345eaaacfbd523cb"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "putUpdateCurriculum",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Técnico en Computación\",\r\n    \"subjects\": [\r\n        \"12120\", \"10180\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/curriculums/:id",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"curriculums",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "634f8d7c345eaaacfbd523cb"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8f-zFWY3rrYonEj5ZzF6pZ2kkBH9Wg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Oct 2022 05:47:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"634f8d7c345eaaacfbd523cb\",\n    \"subjects\": [\n        \"634f7efef1b03f1d5d79c6e1\",\n        \"634f7f10f1b03f1d5d79c6e3\"\n    ],\n    \"name\": \"Técnico en Computación\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteRemoveCurriculum",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/curriculums/:code",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"curriculums",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "635af07a94b3acde85100243"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteRemoveCurriculum",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/curriculums/:id",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"curriculums",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "632fa0553eac58377847c15e"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Oct 2022 02:11:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.collectionVariables.set(\"access_token\", jsonData.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "pensum-builder",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ba123!",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"pensum-builder\",\r\n    \"password\": \"Ba123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_api}}/auth/login",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"pensum-builder\",\r\n    \"password\": \"Ba123!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local_api}}/auth/login",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f7-dSJuor1Zgwr9Rz0ql/pvSAl/vhA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 23:37:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzBiZGM1NGI0MTQxMGI3NDk5MGJjOSIsInVzZXJuYW1lIjoicGVuc3VtLWJ1aWxkZXIiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjQxNDkwNDMsImV4cCI6MTY2NDE1MjY0M30.M6uiQYg3ecEO6fs-bdtbUxI0gBP4VapqL0Em6BiimXY\"\n}"
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{local_api}}/auth/profile",
+							"host": [
+								"{{local_api}}"
+							],
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{local_api}}/auth/profile",
+									"host": [
+										"{{local_api}}"
+									],
+									"path": [
+										"auth",
+										"profile"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-UzTi1L804smoj5RiICwlZV2Tj/o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 23:37:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"6330bdc54b41410b74990bc9\",\n    \"username\": \"pensum-builder\",\n    \"role\": \"admin\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local_api",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
