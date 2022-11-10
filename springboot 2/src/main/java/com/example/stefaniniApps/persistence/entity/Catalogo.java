@@ -6,17 +6,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document("catalogo")
 public class Catalogo {
     /*
-    * Agregar:
- - ID:  q1123weads
- - Name:   Example
- - Description: This is a Description
- - Category:  [ para filtrar por categoria] String
- - Precio 23$ String
- - url:    "http://example.com/"  String
- - number_rating: 0 - 5  int
-
-    *
-    * */
+     * Agregar:
+     * - ID: q1123weads
+     * - Name: Example
+     * - Description: This is a Description
+     * - Category: [ para filtrar por categoria] String
+     * - Precio 23$ String
+     * - url: "http://example.com/" String
+     * - number_rating: 0 - 5 int
+     *
+     * 
+     */
     @Id
     private String id;
     private String name;
@@ -26,9 +26,10 @@ public class Catalogo {
     private String url;
     private Integer numberRating;
     private String banner;
+    private Boolean isInstalled;
 
-
-    public Catalogo(String id, String name, String description, String category, Double price, String url, Integer numberRating, String banner) {
+    public Catalogo(String id, String name, String description, String category, Double price, String url,
+            Integer numberRating, String banner, Boolean isInstalled) {
         super();
         this.id = id;
         this.name = name;
@@ -38,6 +39,7 @@ public class Catalogo {
         this.url = url;
         this.numberRating = numberRating;
         this.banner = banner;
+        this.isInstalled = isInstalled;
     }
 
     public String getId() {
@@ -102,6 +104,14 @@ public class Catalogo {
 
     public void setBanner(String banner) {
         this.banner = banner;
+    }
+
+    public void setIsInstalled(Boolean isInstalled) {
+        this.isInstalled = isInstalled;
+    }
+
+    public Boolean getIsInstalled() {
+        return isInstalled;
     }
 
     @Override
